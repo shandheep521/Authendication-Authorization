@@ -5,13 +5,13 @@ const {
   loginUser,
   getUserProfile,
   updateUserProfile
-} = require('Controllers');
-const { protect } = require('auth');
+} = require('../controllers/userController');
+const { protect } = require('../middleware/auth');
 const {
   registerValidation,
   loginValidation,
   updateProfileValidation
-} = require('middleware');
+} = require('../middleware/validation');
 
 // Public routes
 router.post('/register', registerValidation, registerUser);
