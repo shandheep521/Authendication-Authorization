@@ -1,5 +1,5 @@
-const User = require('..User');
-const { generateToken } = require('..jwtUtils');
+const User = require('../models/User');
+const { generateToken } = require('../utils/jwtUtils');
 const { validationResult } = require('express-validator');
 
 /**
